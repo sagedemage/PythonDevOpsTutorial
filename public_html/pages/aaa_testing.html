@@ -32,30 +32,34 @@
 			<h2> AAA Testing </h2>
 			<p> 
 				AAA testing is a way to design test cases. AAA testing stands for Arrange-Act-Assert.
-				Arrange: Sets up the test case. For example, an object needs to be instantiated for the test case.
-				Act: Cover a section of the code to be tested. This can be a method or a function. 
-				Assert: Checks the result of the response is the correct numeric or string value. 
-				Asserts decides if the test passes. 
 			</p>
+			<ul>
+				<li> Arrange: Sets up the test case. For example, an object needs to be instantiated for the test case. </li>
+				<li> Act: Cover a section of the code to be tested. This can be a method or a function. </li>
+				<li> Assert: Checks the result of the response is the correct numeric or string value. 
+					<ul>
+						<li> Asserts decides if the test passes. </li>
+					</ul>
+				</li>
+			</ul>
 			<h4> Unit Testing </h4>
-<pre class="command">
-def test_division():
-	"""Testing division method"""
-	# Arrange
-	num1 = 4
-	num2 = 2
-	# Act
-	result = num1 / num2
-	# Assert
-	assert result == 2
-</pre>
+			<h5> Example </h5>
 			<p>
-			In this example, 
+				<img src="../images/aaa_testing.png" alt="unit test">
+			</p>
+			<p> In this example, </p> 
 			<ol>
-				<li> The Arrange section sets the values for number 1 and 2. </li>
-				<li> The Act section gets the result of dividing the two variables. </li> 
+				<li> The Arrange section sets the values of an int value of 1 and a tuple that contains an int value of 2.  </li>
+				<li> The Act section gets the result of addition from the 2 parameters.  
+					<ul>
+						<li> The get method of the addition class adds the values from the tuple to the first value until it looped through all values of the tuple. </li>
+					</ul>
+				</li> 
 				<li> The Assert section checks to see if the result is correct. </li>
 			</ol>
+			<h5> get_result method of the Addition Class </h5>
+			<p>
+				<img src="../images/addition_class.png">
 			</p>
 		</div>
 		<footer>
