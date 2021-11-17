@@ -24,19 +24,81 @@
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="test_tools.html">Testing Tools</a></li>
 		<li><a href="aaa_testing.html">AAA Testing</a></li>
-		<li><a class="active" href="oops.html">OOPs</a></li>
+		<li><a class="active" href="oop.html">OOP</a></li>
 		<li><a href="soc.html">SoC</a></li>
 	</ul>
 	<body>
 		<div class="content">
 			<h2> Object Oriented Programming </h2>
 			<p> Object Oriented Programming is...</p>
-			<ol>
-				<li>Excapsulation</li>
-				<li>Inheritance</li>
-				<li>Polymorphism</li>
-				<li>Abstraction</li>
-			</ol>
+			<h5>Excapsulation</h5>
+			<p><b>Ecapsulation</b> is the idea of wrapping data and methods into a single unit</p>
+			<p><b>Encapsulation Example</b></p>
+			<p>
+				<img src="../images/calculation_class.png" alt="encapsulation">
+			</p>
+			<p> <b>Explaination</b>: </p>
+			<p> 
+			In this example, the constructor class binds the variables it defined from its parameters.
+			All the methods outside the constructor have global access to these variables. This example 
+			allows the programs to resuse the code without reapeating itself; this concept is called 
+			DRY (Don't Repeat Yourself).
+			</p>
+			<h5>Inheritance</h5>
+			<p> <b>Inheritance</b> is the idea of inheriting methods and properties from another class.</p>
+			<p> Inheritance Terms </p>
+			<ul>
+				<li>The <b>parent class</b> is the class where classes get inherited from. </li> 
+				<li>The <b>child class</b> is the class that inherits from another class</li>
+			</ul>
+			<p><b>Parent Class</b></p>
+			<p>
+				<img src="../images/calculation_class.png" alt="parent class">
+			</p>
+			<p><b>Child Class</b></p>
+			<p>
+				<img src="../images/addition_class.png" alt="child class">
+			</p>
+			<p> <b>Explaination</b>: </p>
+			<p>In the Addition class, the get_result method inherites 
+			value_a and values variables from the Calculation class 
+			by having the Addition class be given the Calculation class as 
+			its parameter. </p>
+			<h5>Polymorphism</h5>
+			<p>
+				The word <b>polymorphism</b> means having different forms. 
+				<b>Polymorphism</b> in OOP is the condition where same function name can be used for different scenarios. 
+				For example, a method from one object and another method from another object both have the same name. 
+				The method determines which implementation to choose depending on method’s object. 
+				This can sound confusing, so an example will help explain what I am talking about. 
+			</p>
+			<p><b>Polymorphism Example</b></p>
+			<p>
+				<img src="../images/polymorphism.png" alt="polymorphism">
+			</p>
+			<p> <b>Explaination</b>: </p>
+			<p>
+				In this example, the addition and subtraction objects both use get_result() method.
+				However, each different object uses its own implementation of get_result().
+			</p>
+			<h5>Abstraction</h5>
+			<p>
+				<b>Abstraction</b> is the concept of OOP where it hides the implementation of the process from 
+				the user. For example, the user of the coffee machine does not know the exact process the coffee machine 
+				takes to brew coffee. All the user knows is about using the coffee machine. The user does not know how it works. 
+			</p>
+			<p>
+				<img src="../images/abstraction.png" alt="abstraction">
+			</p>
+			<p> <b>Explaination</b>: </p>
+			<p>
+				The calculator program provides add_number interface to the user. 
+				The process of adding all the numbers in the get_result method of the 
+				Addition class is not exposed in in the add_number interface. 
+				The user does not know process of how get the result of addition. 
+				The user knows that the interface gives the result of addition, 
+				and it adds the calculation in the history. 
+			</p>
 			<h4> Glossary of OOP Terms </h4>
 			<ol>
 				<li><b>Factory</b> – Creational design pattern that allows an interface or class to create an object. 
