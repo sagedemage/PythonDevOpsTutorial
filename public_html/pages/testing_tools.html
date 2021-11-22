@@ -4,7 +4,7 @@
 		<!-- Define character encoding to be UTF-8 -->
     	<meta charset="utf-8">
 		<!-- Browser tab's title -->
-		<title> Test Tools </title>
+		<title> Testing Tools </title>
 		<!-- Browser tab icon -->
 		<link rel="shortcut icon" href="../images/devops.ico">
 		<!-- Make the web page responsive -->
@@ -24,19 +24,19 @@
 	<ul class="navigation">
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="aaa_testing.html">AAA Testing</a></li>
-		<li><a class="active" href="test_tools.html">Testing Tools</a></li>
+		<li><a class="active" href="testing_tools.html">Testing Tools</a></li>
 		<li><a href="oop.html">OOP</a></li>
 		<li><a href="soc.html">SoC</a></li>
 	</ul>
 	<body>
 		<div class="content">
 			<h2> Testing Tools </h2>
-			<p> Testing tools are the tools ...
+			<p> Testing tools are the tools used to test the program. 
+			The testing tools I will mention in this tutorial are pytest, pylint, and coverage.
 			</p>
-			<h4> Beginner’s Tips and Tricks in implementing Pylint </h4>
-			<h5>Pylint</h5>
+			<h4> Pylint </h4>
 			<p>
-			Pylint is a tool used to make sure the python code is written properly. 
+			<b>Pylint</b> is a tool used to make sure the python code is written properly. 
 			It standardized how python code should be written. 
 			Pylint follows the PEP 8 coding style.
 			</p>
@@ -61,7 +61,8 @@
 				<b>Pytest</b> is a framework used to help programmers write good programs that uses 
 				test porgrams to check agasint different scenarios. 
 			</p>
-			<p> <b>Coverage</b> checks how effective the tests are </p>
+			<p> <b>Coverage</b> checks how effective the tests are. To get 100 percent coverage, make sure the test
+			programs test every method or funtion of the program.</p>
 			<p> At the root of the repository directory run the pytest command with the pylint and coverage flags
 			to test the program. </p>
 			<pre class="command">pytest --pylint --cov</pre>
@@ -69,8 +70,12 @@
 			<p>
 				<img class="responsive_image" src="../images/test_result.png" alt="test result">
 			</p>
-			<p> For the result, it should pass all the test cases and the overall coverage must be 100% to
-			pass the test. </p>
+			<p> For the result </p>
+			<ul>
+				<li> It passed all the test cases </li>
+				<li> Pylint finds no problem with the code format </li>
+				<li> The overall coverage is 100% </li>
+			</ul>
 			<h4> Git repository </h4>
 			<p>
 				<a href="https://github.com/sagedemage/testing_tools"> Testing Tools </a>
